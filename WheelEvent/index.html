@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Touch Events</title>
+</head>
+<body>
+   
+    <p id="demoDiv">Touch this paragraph to trigger a function that will write "Hello World".</p>
+
+    <p><strong>Note:</strong> This example is for touch devices only.</p>
+    
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demoDiv").addEventListener("touchstart",()=>{
+          document.getElementById("demo").innerHTML = "Hello World";
+        })
+        </script>
+</body>
+</html>
